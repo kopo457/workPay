@@ -1,7 +1,35 @@
 table {
     border-collapse: collapse;
 }
-td {
+th, td {
     border: 1px solid black;
-    padding: 30px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
 } 
+.dayCell {
+    background-color: gainsboro;
+}
+.saturdayName {
+    color: blue;
+}
+.sundayName {
+    color: red;
+}
+.dayName {
+    font-weight: bold;
+    text-align: center;
+}
+.dateNumber, .saturday, .sunday {
+    margin: 0px 0px 10px 0px;
+    vertical-align: top;
+}
+.saturday {
+    color: blue;
+}
+.sunday {
+    color: red;
+}
+.dateInput {
+    text-align: center;
+}
