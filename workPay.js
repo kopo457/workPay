@@ -102,10 +102,12 @@ function sumWorkTime() {
   let nowFirstDay = nowFirstDate.getDay();
   (nowFirstDay - 1 == -1) ? nowFirstDay = 6 : nowFirstDay -= 1;
 
-  let sumWeekWork = 0;
+  let sumWorkTime = 0;
   for(let i = nowFirstDay; i < nowLastDate; i++) {
     let dayWorkTime = document.getElementsByClassName("dateInput")[i].value;
-    sumWeekWork += Number(dayWorkTime);
+    sumWorkTime += Number(dayWorkTime);
+    let printWorkTime = document.getElementById('resultP');
+    printWorkTime.textContent = "총 근무 시간은 " + sumWorkTime + "시간 입니다.";
   }
-  console.log(sumWeekWork);
+  console.log(sumWorkTime);
 }

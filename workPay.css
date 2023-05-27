@@ -1,9 +1,10 @@
 table {
     border-collapse: collapse;
+    margin: auto;
 }
 th, td {
     border: 1px solid black;
-    width: 150px;
+    width: 130px;
     height: 100px;
     text-align: center;
 } 
@@ -32,4 +33,13 @@ th, td {
 }
 .dateInput {
     text-align: center;
+}
+#resultP {
+    text-align: center;
+    margin: auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap : 20px;
 }
