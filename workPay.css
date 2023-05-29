@@ -40,8 +40,7 @@ table {
 }
 .container {
     display: grid;
-    grid-template-columns: 7fr 3fr;
-    gap : 20px;
+    grid-template-columns: 6fr 3fr;
 }
 .box {
     display: none;

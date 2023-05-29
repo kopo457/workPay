@@ -130,8 +130,20 @@ function sumWorkTime() {
       dateCount = 0;
     }
 
+    let intNum = 0;
     let printWorkTime = document.getElementById('resultP');
-    printWorkTime.textContent = "총 근무 시간은 " + sumWorkTime + "시간 입니다.";
+    if (sumWorkTime % 1 === 0) {
+      printWorkTime.textContent = "총 근무 시간은 " + sumWorkTime + "시간 입니다.";
+    } else {
+      if (intNum === 0) {
+        printWorkTime.textContent = "총 근무 시간은 " + (sumWorkTime - 0.5) + "시간 30분 입니다.";
+        intNum = 1;
+      }
+      else {
+        printWorkTime.textContent = "총 근무 시간은 " + (sumWorkTime + 1 - 0.5) + "시간 30분 입니다.";
+        intNum = 0;
+      }
+    }
   }
   return {
     sumWorkTime: sumWorkTime,
