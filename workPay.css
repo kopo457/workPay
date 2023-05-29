@@ -1,15 +1,15 @@
 table {
-    border-collapse: collapse;
     margin: auto;
+    border-collapse: collapse;
 }
-th, td {
+#calendar td {
     border: 1px solid black;
     width: 130px;
     height: 100px;
     text-align: center;
 } 
 .dayCell {
-    background-color: gainsboro;
+    background-color: paleturquoise;
 }
 .saturdayName {
     color: blue;
@@ -31,15 +31,40 @@ th, td {
 .sunday {
     color: red;
 }
-.dateInput {
-    text-align: center;
+.emptyCell {
+    background-color: gainsboro;
 }
-#resultP {
-    text-align: center;
+#side {
     margin: auto;
+    text-align: center;
 }
 .container {
     display: grid;
     grid-template-columns: 7fr 3fr;
     gap : 20px;
+}
+.box {
+    display: none;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+}
+#resultWork td{
+    border: 1px solid black;
+    padding: 30px;
+}
+th{
+    border: 1px solid black;
+    padding: 30px;
+}
+#inputPay {
+    margin-bottom: 50px;
+}
+input {
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+#resultP {
+    font-size: 30px;
 }
