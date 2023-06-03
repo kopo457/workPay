@@ -50,10 +50,10 @@ function createCalendar(year, month) {
   let header = calendar.insertRow();
   for (let dayName = 0; dayName < 7; dayName++) {
     let cell = header.insertCell();
-    let dayText = document.createElement('p');  //요일 넣을 p태그 생성
-    dayText.textContent = weekdays[dayName];    //p태그 안에 요일 넣기
-    dayText.classList.add('dayName');           //p태그에 클래스 추가
-    cell.appendChild(dayText);                  //p태그를 셀의 자식으로 추가
+    let dayText = document.createElement('p');
+    dayText.textContent = weekdays[dayName];
+    dayText.classList.add('dayName');
+    cell.appendChild(dayText);
     cell.classList.add('dayCell');
 
     if (dayName === 5) { cell.classList.add('saturdayName'); }
