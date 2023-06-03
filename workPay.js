@@ -118,7 +118,7 @@ function sumWorkTime() {
   let j = 0;
   let dateCount = dayNum.firstDayNum;
 
-  for (let i = dayNum.firstDayNum; i < dayNum.lastDate; i++) {
+  for (let i = 0; i < dayNum.lastDate; i++) {
     let dayWorkTime = document.getElementsByClassName("dateInput")[i].value;
     sumWorkTime += Number(dayWorkTime);
     if (dateCount < 6) {
