@@ -67,6 +67,7 @@ function createCalendar(year, month) {
   //시작 위치까지 빈 셀 추가
   for (let i = 0; i < dayNum.firstDayNum; i++) {
     let emptyCell = row.insertCell();
+    emptyCell.classList.add("emptyCell");
   }
 
   //달력 생성
